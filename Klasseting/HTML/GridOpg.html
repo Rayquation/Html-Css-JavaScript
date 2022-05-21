@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container{
+            display: grid;
+            gap:20px 40px;
+            grid-template-columns: auto auto auto auto auto ;
+            background-color:steelblue;
+            padding: 40px;
+        }
+        #img1{
+            height: 250px;
+            width: 250px;
+            border: solid deepskyblue 5px;
+            background-color: blueviolet;
+        }
+        #img2{
+            height: 250px;
+            width: 250px;
+            border: solid deepskyblue 5px;
+            background-color: blueviolet;
+        }
+        #img3{
+            height: 250px;
+            width: 250px;
+            border: solid deepskyblue 5px;
+            background-color: blueviolet;
+        }
+        #img4{
+            height: 250px;
+            width: 250px;
+            border: solid deepskyblue 5px;
+            background-color: blueviolet;
+        }
+        #img5{
+            height: 250px;
+            width: 250px;
+            border: solid deepskyblue 5px;
+            background-color: blueviolet;
+        }
+        #img6{
+            height: 250px;
+            width: 250px;
+            border: solid deepskyblue 5px;
+            background-color: blueviolet;
+        }
+        #img7{
+            height: 250px;
+            width: 250px;
+            border: solid deepskyblue 5px;
+            background-color: blueviolet;
+        }
+        #img8{
+            height: 250px;
+            width: 250px;
+            border: solid deepskyblue 5px;
+            background-color: blueviolet;
+        }
+        #img9{
+            height: 250px;
+            width: 250px;
+            border: solid deepskyblue 5px;
+            background-color: blueviolet;
+        }
+        #img10{
+            height: 250px;
+            width: 250px;
+            border: solid deepskyblue 5px;
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <div id="messageDiv"></div>
+    <div class="grid-container" onclick="theClick(event)">
+        <div class="grid-item"><img id="img1" src="https://images.ctfassets.net/swt2dsco9mfe/6tsR29Slg89AshLq5dmd2U/14daf5a0f02bf0e248fe8bfe75b0d103/qhxIu1bYe2ci1cwelc.jpg?q=70&w=1920"></div>
+        <div class="grid-item"><img id="img2" src="https://www.thoughtco.com/thmb/csOyAS6eH7mxa8HU6L6b-KrqAec=/3452x3452/smart/filters:no_upscale()/the-underwater-world-of-philippines--southeast-asia--western-pacific-ocean--638856734-5ab16034642dca00369e3cc6.jpg"></div>
+        <div class="grid-item"><img id="img3" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png"></div>
+        <div class="grid-item"><img id="img4" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/005.png"></div>
+        <div class="grid-item"><img id="img5" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/006.png"></div>
+        <div class="grid-item"><img id="img6" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/006_f2.png"></div>
+        <div class="grid-item"><img id="img7" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png"></div>
+        <div class="grid-item"><img id="img8" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/002.png"></div>
+        <div class="grid-item"><img id="img9" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/003.png"></div>
+        <div class="grid-item"><img id="img10" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/003_f2.png"></div>
+    </div>
+
+    <script>
+        var count =0;
+
+        //  var items = [
+        //      [1,2,3],
+        //      [4,5,6],
+        //      [7,8,9]
+        //  ]
+        //  console.log(items[0][0])
+        //  console.log(items[0][1])
+        //  console.log(items[0][2])
+
+        function theClick(event)
+        {
+            if (event.target.id!=""){
+                var messageDiv = document.getElementById("messageDiv")
+            count++;
+            messageDiv.innerText = "Clicked: " + event.target.id + " Count: " +count;
+            }
+            // var id=event.target.id;
+            // var x=id[0];
+            // var y=id[1];
+            // items[x][y]=0
+        }
+    </script>
+</body>
+</html>

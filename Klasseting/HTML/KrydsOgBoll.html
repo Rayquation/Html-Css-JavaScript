@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .grid-container{
+        display: grid;
+        gap:20px 40px;
+        grid-template-columns: auto auto auto ;
+        background-color:steelblue;
+    }
+    .grid-container .item-grid{
+        height: 100px;
+            width: 100px;
+        border: solid deepskyblue 5px;
+            background-color: blueviolet;
+            display: block;
+            text-align: center;
+            font-size: xx-large;
+            font-weight: bold;
+    }
+    </style>
+</head>
+<body>
+    <div id="WinnerMessage"></div>
+    <div id="messageDiv"></div>
+    <div class="grid-container" onclick="theClick(event)">
+        <div class="item-grid" id="00"></div>
+        <div class="item-grid" id="01"></div>
+        <div class="item-grid" id="02"></div>
+        <div class="item-grid" id="10"></div>
+        <div class="item-grid" id="11"></div>
+        <div class="item-grid" id="12"></div>
+        <div class="item-grid" id="20"></div>
+        <div class="item-grid" id="21"></div>
+        <div class="item-grid" id="22"></div>
+    </div>
+    <script>
+        var count =0;
+
+          var items = [
+              [1,2,3],
+             [4,5,6],
+              [7,8,9]
+        ]
+        var value=true;
+        function theClick(event)
+        {
+            var messageDiv = document.getElementById(event.target.id)
+            if (messageDiv.innerText==""){
+            if (value==true){
+            messageDiv.innerText = "X";
+            var id=event.target.id;
+            var x=id[0];
+            var y=id[1];
+            items[x][y]= "X";
+            value=false;
+            }else{
+            messageDiv.innerText = "O";
+            var id=event.target.id;
+            var x=id[0];
+            var y=id[1];
+            items[x][y]= "O";
+            value=true;
+            }
+            }
+            if (items[0][0]=="X"&&items[0][1]=="X"&&items[0][2]=="X"){
+                alert("X har vundet");
+            }else if (items[0][0]=="O"&&items[0][1]=="O"&&items[0][2]=="O"){
+                alert("O har vundet");
+            }else if (items[1][0]=="O"&&items[1][1]=="O"&&items[1][2]=="O"){
+                alert("O har vundet");
+            }else if (items[1][0]=="X"&&items[1][1]=="X"&&items[1][2]=="X"){
+                alert("X har vundet");
+            }else if (items[2][0]=="O"&&items[2][1]=="O"&&items[2][2]=="O"){
+                alert("O har vundet");
+            }
+            else if (items[2][0]=="X"&&items[2][1]=="X"&&items[2][2]=="X"){
+                alert("X har vundet");
+            }else if (items[0][0]=="O"&&items[1][0]=="O"&&items[2][0]=="O"){
+                alert("O har vundet")
+            }else if (items[0][1]=="O"&&items[1][1]=="O"&&items[2][1]=="O"){
+                alert("O har vundet")
+            }else if (items[0][2]=="O"&&items[1][2]=="O"&&items[2][2]=="O"){
+                alert("O har vundet")
+            }else if (items[0][0]=="X"&&items[1][0]=="X"&&items[2][0]=="X"){
+                alert("X har vundet")
+            }else if (items[0][1]=="X"&&items[1][1]=="X"&&items[2][1]=="X"){
+                alert("X har vundet")
+            }else if (items[0][2]=="X"&&items[1][2]=="X"&&items[2][2]=="X"){
+                alert("X har vundet")
+            }else if (items[0][0]=="X"&&items[1][1]=="X"&&items[2][2]=="X"){
+                alert("X har vundet")
+            }else if (items[0][2]=="X"&&items[1][1]=="X"&&items[2][0]=="X"){
+                alert("X har vundet")
+            }
+            else if (items[0][0]=="O"&&items[1][1]=="O"&&items[2][2]=="O"){
+                alert("O har vundet")
+            }else if (items[0][2]=="O"&&items[1][1]=="O"&&items[2][0]=="O"){
+                alert("O har vundet")
+            }
+        }
+
+        
+    </script>
+</body>
+</html>
