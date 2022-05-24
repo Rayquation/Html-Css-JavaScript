@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        img{
+            max-width: 100%;
+        }
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        header{
+            display: flex;
+            border: 2px black solid;
+            background-image:url('banner.jpg');
+        }
+        footer{
+            margin-top: 20px;
+            display: flex;
+            border: 2px black solid;
+            background-image:url('banner_footer.jpg') ;
+        }
+        footer p{
+            font-size: large;
+            font-weight: bold;
+        }
+        footer #logo-footer{
+            margin-left: 60%;
+        }
+        footer #facebook{
+            margin-left: 10px;
+        }
+        footer #instragram{
+            margin-left: 10px;
+        }
+        footer #vimeo{
+            margin-left:10px;
+        }
+        .div_nav a img{
+            width:50%;
+            height: 50%;
+        }
+        .div_nav{
+            font-weight: bold;
+            align-self: center;
+            margin-left: 35%;
+            margin-top: 7%;
+        }
+        .div_nav a{
+            margin-left: 20px;
+        }
+        .Text{
+            margin-top:20px;
+        }
+        .Image{
+            margin-top:20px;
+            width: 70%;
+            height:70%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img id="picture" src="the_band_logo_header.png"></a>
+        </nav>
+        <div class="div_nav">
+            <nav>
+                <a href="Medlemmer.html">Medlemmer</a>
+                <a href="Live.html">Live</a>
+                <a href="Merchandise.html">Merchandise</a>
+                <a href="Info.html">Info</a>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <div class="Text">
+            <h1>The Band spiller op</h1><p>The Band er et rock band med base i det århusianske musik-miljø som spiller koncerter i hele skandinavien. <br>
+            The Band blev etableret i 2007 som ungdomsband i Århus. Vi har udgivet to full-length albums og 5 ep’er.Vi udgav vores første album i 2013.<br>
+             I 2015 fulgte album nummer to. Det er vores ambition at udgive en ep hvert halve år. <br>
+            Vores seneste ep udkom i starten af 2018. Vi elsker at spille live og vi glæder os til at se jer til en af efterårets koncerter. 
+
+        </p></div>
+        <div ><img class="Image" src="theband.jpg"></div>
+    </div>
+    <footer>
+        <p>Booking: +45 2143 6578</p>
+        <img id="logo-footer" src="the_band_logo_footer.png">
+        <img id="facebook" src="facebook-logo-icon.png">
+        <img id="instragram" src="instagram-logo-icon.png">
+        <img id="vimeo" src="vimeo-logo-icon.png">
+    </footer>
+</body>
+</html>

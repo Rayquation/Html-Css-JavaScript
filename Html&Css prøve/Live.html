@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        img{
+            max-width: 100%;
+        }
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        header{
+            display: flex;
+            border: 2px black solid;
+            background-image:url('banner.jpg');
+        }
+        footer{
+            margin-top: 20px;
+            display: flex;
+            border: 2px black solid;
+            background-image:url('banner_footer.jpg') ;
+        }
+        footer p{
+            font-size: large;
+            font-weight: bold;
+        }
+        footer #logo-footer{
+            margin-left: 60%;
+        }
+        footer #facebook{
+            margin-left: 10px;
+        }
+        footer #instragram{
+            margin-left: 10px;
+        }
+        footer #vimeo{
+            margin-left:10px;
+        }
+        .div_nav a img{
+            width:50%;
+            height: 50%;
+        }
+        .div_nav{
+            font-weight: bold;
+            align-self: center;
+            margin-left: 35%;
+            margin-top: 7%;
+        }
+        .div_nav a{
+            margin-left: 20px;
+        }
+        .Text{
+            margin-top:20px;
+        }
+        .Image{
+            margin-top: 20px;
+            margin-right: 20px;
+            margin-left: 20px;
+            width: 90%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img id="picture" src="the_band_logo_header.png"></a>
+        </nav>
+        <div class="div_nav">
+            <nav>
+                <a href="Medlemmer.html">Medlemmer</a>
+                <a href="Live.html">Live</a>
+                <a href="Merchandise.html">Merchandise</a>
+                <a href="Info.html">Info</a>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <div class="Text">
+            <h1>The band - Live</h1>
+            <p>Musik skal opleves, og allerhelst live.<br>
+                 Vi er booket til at spille koncerter en række steder rundt omkring i Danmark i den kommende tid. Vi planlægger en skandinavisk turné i foråret 2019.<br>
+                 Vi offentliggør løbende datoerne i løbet af efteråret. Følg med her på hjemmesiden eller på vores facebook-side.</p>
+            <h3>Bookede koncerter</h3>
+            <p>    Roskilde hallerne - 26 september 2018<br>
+                Kolding Musikhus - 4 oktober 2018<br>
+                Aalborg Koncertus - 23 oktober 2018<br>
+                Tobakken, Esberg - 12 november 2018<br>
+                Ringsted Kongrescenter - 27 november 2018<br>
+                Tømmerup Hallem, Kalundborg - 12 december 2018</p>
+        </div>
+        <div >
+            <img class="Image" src="concert.jpg">
+        </div>
+    </div>
+    <footer>
+        <p>Booking: +45 2143 6578</p>
+        <img id="logo-footer" src="the_band_logo_footer.png">
+        <img id="facebook" src="facebook-logo-icon.png">
+        <img id="instragram" src="instagram-logo-icon.png">
+        <img id="vimeo" src="vimeo-logo-icon.png">
+    </footer>
+</body>
+</html>
